@@ -1,19 +1,21 @@
 {
-	"imports": {
-		"hono": "jsr:@hono/hono@^4.5.5",
-		"lume/": "https://deno.land/x/lume@v2.2.4/",
-		"tailwindcss": "npm:tailwindcss@^3.4.10"
-	},
-	"tasks": {
-		"lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
-		"build": "deno task lume",
-		"serve": "deno task lume -s"
-	},
-	"compilerOptions": {
-		"types": ["lume/types.ts"],
-		"jsx": "react-jsx",
-		"jsxImportSource": "npm:preact"
-		// "jsxImportSource": "npm:react",
-		// "jsxImportSourceTypes": "npm:@types/react"
-	}
+  "imports": {
+    "hono": "jsr:@hono/hono@^4.5.5",
+    "lume/": "https://deno.land/x/lume@v2.2.4/",
+    "tailwindcss": "npm:tailwindcss@^3.4.10",
+    "daisyui": "npm:daisyui@^4.12.10"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s"
+  },
+  "compilerOptions": {
+    "types": ["lume/types.ts"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact",
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
+    // "jsxImportSource": "npm:react",
+    // "jsxImportSourceTypes": "npm:@types/react"
+  }
 }

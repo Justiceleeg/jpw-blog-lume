@@ -1,4 +1,6 @@
-export default ({ social, comp }: Lume.Data, helpers: Lume.Helpers) => (
+import type { SocialData } from "../_data/social.ts";
+
+export default ({ social }: Lume.Data & SocialData, helpers: Lume.Helpers) => (
   <ul>
     {social.map((media) => (
       <li key={media.name}>

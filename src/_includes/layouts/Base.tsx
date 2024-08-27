@@ -1,7 +1,5 @@
-export default (
-  { title, children, comp }: Lume.Data,
-  helpers: Lume.Helpers
-) => (
+export default ({ title, children, comp }: Lume.Data) => (
+  // helpers: Lume.Helpers
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
@@ -9,6 +7,7 @@ export default (
       <title>{{ title }}</title>
       <link rel="stylesheet" href="/css/base-styles.css" />
       <link rel="stylesheet" href="/css/code-highlight.css" />
+      <script src="/scripts/toggleTheme.js" async />
     </head>
     <body>
       <comp.SiteHeader />

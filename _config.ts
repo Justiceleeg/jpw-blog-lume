@@ -17,6 +17,9 @@ import slugify_urls from "lume/plugins/slugify_urls.ts";
 import source_maps from "lume/plugins/source_maps.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import transform_images from "lume/plugins/transform_images.ts";
+import esbuild from "lume/plugins/esbuild.ts";
+
+import daisyui from "daisyui";
 
 import footnotes from "https://deno.land/x/lume_markdown_plugins@v0.7.0/footnotes.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
@@ -36,6 +39,7 @@ site.copy("static", ".");
 site.use(toc()); // Markdown plugin
 site.use(footnotes()); // Markdown plugin
 site.use(jsx()); // Required for MDX
+site.use(esbuild());
 site.use(base_path());
 site.use(redirects());
 site.use(
@@ -59,6 +63,12 @@ site.use(source_maps());
 site.use(
   tailwindcss({
     extensions: [".html", ".jsx", ".tsx"],
+    options: {
+      plugins: [daisyui],
+      daisyui: {
+        themes: ["cmyk", "dracula"],
+      },
+    },
   })
 );
 // site.use(pagefind());
