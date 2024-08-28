@@ -7,7 +7,9 @@ export default ({ title, children, comp }: Lume.Data) => (
       <title>{{ title }}</title>
       <link rel="stylesheet" href="/css/base-styles.css" />
       <link rel="stylesheet" href="/css/code-highlight.css" />
+      <link rel="stylesheet" href="/css/font-styles.css" />
       <script src="/scripts/toggleTheme.js" async />
+      <script src="/scripts/scrollEvents.js" async />
     </head>
     <body>
       <comp.SiteHeader />

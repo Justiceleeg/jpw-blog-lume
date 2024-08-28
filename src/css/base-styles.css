@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.transition-nav-border {
+  transition: all ease-in-out 0.2s;
+}

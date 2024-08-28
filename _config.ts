@@ -18,6 +18,7 @@ import source_maps from "lume/plugins/source_maps.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import transform_images from "lume/plugins/transform_images.ts";
 import esbuild from "lume/plugins/esbuild.ts";
+import sass from "lume/plugins/sass.ts";
 
 import daisyui from "daisyui";
 
@@ -68,6 +69,12 @@ site.use(
       daisyui: {
         themes: ["cmyk", "dracula"],
       },
+      theme: {
+        fontFamily: {
+          sans: ["GeistSans"],
+        },
+      },
+      safelist: ["border-b-2", "hidden"],
     },
   })
 );
@@ -75,5 +82,6 @@ site.use(
 site.use(picture());
 site.use(transform_images()); // used by transform_images
 site.use(postcss()); // Required for tailwindcss
+site.use(sass());
 
 export default site;
