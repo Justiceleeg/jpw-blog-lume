@@ -74,7 +74,7 @@ site.use(
           sans: ["GeistSans"],
         },
       },
-      safelist: ["border-b-2", "hidden"],
+      safelist: ["border-b", "hidden"],
     },
   })
 );
