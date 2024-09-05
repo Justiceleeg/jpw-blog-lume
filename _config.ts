@@ -21,6 +21,8 @@ import esbuild from "lume/plugins/esbuild.ts";
 import sass from "lume/plugins/sass.ts";
 
 import daisyui from "daisyui";
+import tailwindcss_typography from "@tailwindcss/typography";
+//? https://github.com/tailwindlabs/tailwindcss-typography
 
 import footnotes from "https://deno.land/x/lume_markdown_plugins@v0.7.0/footnotes.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
@@ -28,10 +30,26 @@ import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
 import lang_javascript from "npm:highlight.js/lib/languages/javascript";
 import lang_typescript from "npm:highlight.js/lib/languages/typescript";
 import lang_rust from "npm:highlight.js/lib/languages/rust";
+import lang_json from "npm:highlight.js/lib/languages/json";
+import lang_go from "npm:highlight.js/lib/languages/go";
 
-const site = lume({
-  src: "./src",
-});
+import sub from "npm:markdown-it-sub";
+import sup from "npm:markdown-it-sup";
+import mark from "npm:markdown-it-mark";
+import abbr from "npm:markdown-it-abbr";
+import { full as emoji } from "npm:markdown-it-emoji";
+//? https://github.com/markdown-it/markdown-it
+
+const markdown = {
+	plugins: [sub, sup, emoji, mark, abbr],
+};
+
+const site = lume(
+	{
+		src: "./src",
+	},
+	{ markdown },
+);
 
 site.copy("static", ".");
 // site.copy("_includes/css", "css");
@@ -44,13 +62,15 @@ site.use(esbuild());
 site.use(base_path());
 site.use(redirects());
 site.use(
-  code_highlight({
-    languages: {
-      rust: lang_rust,
-      javascript: lang_javascript,
-      typescript: lang_typescript,
-    },
-  })
+	code_highlight({
+		languages: {
+			rust: lang_rust,
+			javascript: lang_javascript,
+			typescript: lang_typescript,
+			json: lang_json,
+			go: lang_go,
+		},
+	}),
 );
 site.use(date());
 site.use(feed());
@@ -62,21 +82,21 @@ site.use(sitemap());
 site.use(slugify_urls());
 site.use(source_maps());
 site.use(
-  tailwindcss({
-    extensions: [".html", ".jsx", ".tsx"],
-    options: {
-      plugins: [daisyui],
-      daisyui: {
-        themes: ["cmyk", "dracula"],
-      },
-      theme: {
-        fontFamily: {
-          sans: ["GeistSans"],
-        },
-      },
-      safelist: ["border-b", "hidden"],
-    },
-  })
+	tailwindcss({
+		extensions: [".html", ".jsx", ".tsx"],
+		options: {
+			plugins: [daisyui, tailwindcss_typography],
+			daisyui: {
+				themes: ["nord", "dracula"],
+			},
+			theme: {
+				fontFamily: {
+					sans: ["GeistSans"],
+				},
+			},
+			safelist: ["border-b", "hidden"],
+		},
+	}),
 );
 // site.use(pagefind());
 site.use(picture());

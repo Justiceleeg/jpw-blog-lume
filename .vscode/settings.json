@@ -1,13 +1,16 @@
 {
-  "deno.enable": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "tailwindCSS.includeLanguages": {
-    "html": "html",
-    "javascript": "javascript",
-    "css": "css",
-    "typescript": "typescript"
-  },
-  "editor.quickSuggestions": {
-    "strings": true
-  }
+	"deno.enable": true,
+	"editor.defaultFormatter": "biomejs.biome",
+	"tailwindCSS.includeLanguages": {
+		"html": "html",
+		"javascript": "javascript",
+		"css": "css",
+		"typescript": "typescript"
+	},
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"[tailwindcss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }

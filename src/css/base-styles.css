@@ -13,3 +13,51 @@
 /* .nav-bg {
   background-color: rgba(var(--b1), 0.8);
 } */
+
+.svg-fill-accent {
+  fill: oklch(var(--a));
+}
+
+.svg-fill-accent-content {
+  fill: oklch(var(--ac));
+}
+
+.svg-fill-base-content {
+  fill: oklch(var(--bc));
+}
+
+.cls-1 {
+  opacity: 0.65;
+  fill: oklch(var(--a));
+}
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7 {
+  fill: #231f20;
+  stroke-width: 0px;
+  fill: oklch(var(--s));
+}
+.cls-2 {
+  opacity: 0.35;
+  fill: oklch(var(--a));
+}
+.cls-3 {
+  opacity: 0.45;
+  fill: oklch(var(--a));
+}
+.cls-4 {
+  opacity: 0.5;
+  fill: oklch(var(--a));
+}
+.cls-5 {
+  opacity: 0.55;
+  fill: oklch(var(--a));
+}
+.cls-6 {
+  opacity: 0.08;
+  fill: oklch(var(--a));
+}

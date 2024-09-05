@@ -36,9 +36,9 @@ export default () => (
           type="radio"
           id="light-theme-toggle"
           name="theme-dropdown"
-          className="theme-controller btn btn-md btn-block btn-ghost text-md justify-start"
+          className="theme-controller btn btn-md btn-block btn-ghost text-lg justify-start"
           aria-label="light"
-          value="cmyk"
+          value="nord"
         />
       </li>
       <li>
@@ -46,7 +46,7 @@ export default () => (
           type="radio"
           id="dark-theme-toggle"
           name="theme-dropdown"
-          className="theme-controller btn btn-md btn-block btn-ghost text-md justify-start"
+          className="theme-controller btn btn-md btn-block btn-ghost text-lg justify-start"
           aria-label="dark"
           value="dracula"
         />
@@ -56,7 +56,7 @@ export default () => (
           type="radio"
           id="system-theme-toggle"
           name="theme-dropdown"
-          className="theme-controller btn btn-md btn-block btn-ghost text-md justify-start"
+          className="theme-controller btn btn-md btn-block btn-ghost text-lg justify-start"
           aria-label="system"
           value="system"
         />
