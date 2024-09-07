@@ -4,7 +4,10 @@ export const title = "Welcome to my page";
 
 export default ({ navigation, comp }: Lume.Data & NavData) => (
 	// nav-bg backdrop-blur
-	<div className="transition-nav-border neutral-border w-full sticky top-0 bg-base-100 z-10">
+	<div
+		id="nav-bar"
+		className="transition-nav-border border-base-300 w-full sticky top-0 bg-base-100 z-10"
+	>
 		<header>
 			<div className="max-w-screen-lg m-auto">
 				<div className="navbar font-normal">
@@ -16,7 +19,7 @@ export default ({ navigation, comp }: Lume.Data & NavData) => (
 						>
 							<comp.Logo />
 						</a>
-						<div className="text-2xl">justice p white</div>
+						<div className="text-2xl">justice p. white</div>
 					</div>
 					<div className="navbar-end">
 						<comp.ThemeToggle />

@@ -93,8 +93,19 @@ site.use(
 				fontFamily: {
 					sans: ["GeistSans"],
 				},
+				extend: {
+					keyframes: {
+						slideIn: {
+							"0%": { opacity: 0, transform: "translateY(-100%)" },
+							"100%": { opacity: 1, transform: "translateY(0)" },
+						},
+					},
+					animation: {
+						slideIn: "slideIn 0.25s linear",
+					},
+				},
 			},
-			safelist: ["border-b", "hidden"],
+			safelist: ["border-b", "hidden", "animate-slideIn", "opacity-0"],
 		},
 	}),
 );

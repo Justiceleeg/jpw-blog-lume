@@ -11,12 +11,11 @@ export default ({ docTitle, title, children, comp }: Lume.Data) => (
 			<link rel="stylesheet" href="/css/font-styles.css" />
 			<script src="/scripts/toggleTheme.js" async />
 			<script src="/scripts/scrollEvents.js" async />
+			<script src="/scripts/refreshInterests.js" async />
 		</head>
 		<body>
 			<comp.SiteHeader />
-			<main>
-				<div className="max-w-screen-lg m-auto p-4">{children}</div>
-			</main>
+			<main>{children}</main>
 			<comp.SiteFooter />
 		</body>
 	</html>
