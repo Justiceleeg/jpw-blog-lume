@@ -78,7 +78,7 @@ export default () => (
 					<a
 						target="_blank"
 						rel="noreferrer"
-						className="underline decoration-primary group-hover:decoration-2 underline-offset-4"
+						className="group-hover:text-primary underline decoration-primary group-hover:decoration-2 underline-offset-4"
 						href="https://deno.com"
 					>
 						deno

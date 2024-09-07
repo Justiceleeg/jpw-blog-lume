@@ -23,7 +23,7 @@ export default ({ navigation, comp }: Lume.Data & NavData) => (
 					</div>
 					<div className="navbar-end">
 						<comp.ThemeToggle />
-						<nav className="hidden sm:flex">
+						<nav className="hidden md:flex">
 							<ul className="menu menu-horizontal px-1">
 								{navigation.main.map((nav) => (
 									<li key={nav.name} className="text-lg">
@@ -38,7 +38,7 @@ export default ({ navigation, comp }: Lume.Data & NavData) => (
 								))}
 							</ul>
 						</nav>
-						<div className="dropdown dropdown-end sm:hidden">
+						<div className="dropdown dropdown-end md:hidden">
 							<div tabIndex={0} role="button" className="btn btn-ghost">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"

@@ -103,6 +103,19 @@ site.use(
 					animation: {
 						slideIn: "slideIn 0.25s linear",
 					},
+					typography: {
+						DEFAULT: {
+							css: {
+								color: "#333",
+								a: {
+									color: "#3182ce",
+									"&:hover": {
+										color: "#2c5282",
+									},
+								},
+							},
+						},
+					},
 				},
 			},
 			safelist: ["border-b", "hidden", "animate-slideIn", "opacity-0"],
