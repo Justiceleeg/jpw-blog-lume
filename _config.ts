@@ -60,7 +60,7 @@ site.copy("static", ".");
 site.use(toc()); // Markdown plugin
 site.use(footnotes()); // Markdown plugin
 site.use(jsx()); // Required for MDX
-site.use(esbuild());
+site.use(esbuild({ options: { minify: false } }));
 site.use(base_path());
 site.use(redirects());
 site.use(
@@ -90,7 +90,7 @@ site.use(
 		options: {
 			plugins: [daisyui, tailwindcss_typography],
 			daisyui: {
-				themes: ["nord", "dracula"],
+				themes: ["nord", "business"],
 			},
 			theme: {
 				fontFamily: {
@@ -112,11 +112,11 @@ site.use(
 								color: "oklch(var(--bc))",
 								a: {
 									fontWeight: 400,
-									textDecorationColor: "oklch(var(--p))",
+									textDecorationColor: "oklch(var(--s))",
 									textDecorationLine: "underline",
 									textUnderlineOffset: "4px",
 									"&:hover": {
-										color: "oklch(var(--p))",
+										color: "oklch(var(--s))",
 										textDecorationThickness: "2px",
 										transition: "all .2s ease-in-out",
 									},

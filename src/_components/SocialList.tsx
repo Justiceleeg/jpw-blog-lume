@@ -49,7 +49,7 @@ export default ({ social }: Lume.Data & SocialData) => (
 		{social.map((media) => (
 			<a
 				key={media.name}
-				className="btn-ghost rounded p-1 fill-base-content"
+				className="btn-ghost rounded p-1 fill-base-content hover:fill-secondary"
 				href={media.url}
 				title={media.name}
 				target="_blank"

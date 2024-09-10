@@ -119,7 +119,7 @@ const applyInterests = () => {
 		tinkeringInterest.classList.add("animate-slideIn");
 		tinkeringInterest.classList.add("opacity-0");
 		tinkeringInterest.innerHTML = `
-      <a target="_blank" rel="noreferrer" class="underline decoration-primary group-hover:decoration-2 underline-offset-4" href="${url}">${name}</a>
+      <a target="_blank" rel="noreferrer" class="hover:text-secondary underline decoration-secondary group-hover:decoration-2 underline-offset-4" href="${url}">${name}</a>
       <svg class="inline group-hover:translate-x-1 group-hover:scale-125 duration-200 ease-linear transition-transform" width="14" height="14" fill="none" viewBox="0 0 24 24">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 15.25V6.75H8.75">
         </path>

@@ -4,16 +4,16 @@
 import daisyui from "daisyui";
 
 export default {
-  content: ["./src/**/*.{tsx,jsx,js}"],
-  safelist: [],
-  theme: {
-    extend: {},
-    fontFamily: {
-      sans: ["GeistSans"],
-    },
-  },
-  plugins: [daisyui],
-  daisyui: {
-    themes: ["nord", "dracula"],
-  },
+	content: ["./src/**/*.{tsx,jsx,js}"],
+	safelist: [],
+	theme: {
+		extend: {},
+		fontFamily: {
+			sans: ["GeistSans"],
+		},
+	},
+	plugins: [daisyui],
+	daisyui: {
+		themes: ["nord", "business"],
+	},
 };

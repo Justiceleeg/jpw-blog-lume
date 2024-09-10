@@ -16,7 +16,7 @@ export default (
 ) => (
 	<div className="flex flex-col gap-2">
 		<h2>
-			<a href={post.url} className="text-xl font-medium hover:text-primary">
+			<a href={post.url} className="text-xl font-medium hover:text-secondary">
 				{post.title.toLowerCase()}
 			</a>
 		</h2>
@@ -38,7 +38,7 @@ export default (
 		<a
 			href={post.url}
 			style={{ transition: "all .2s ease-in-out" }}
-			className="hover:text-primary underline decoration-primary hover:decoration-2 underline-offset-4 text-sm"
+			className="hover:text-secondary underline decoration-secondary hover:decoration-2 underline-offset-4 text-sm"
 		>
 			continue reading →
 		</a>
