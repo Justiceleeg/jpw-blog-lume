@@ -16,9 +16,11 @@ import sitemap from "lume/plugins/sitemap.ts";
 import slugify_urls from "lume/plugins/slugify_urls.ts";
 import source_maps from "lume/plugins/source_maps.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
-import transform_images from "lume/plugins/transform_images.ts";
+import transformImages from "lume/plugins/transform_images.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import sass from "lume/plugins/sass.ts";
+import readingInfo from "lume/plugins/reading_info.ts";
+//? https://lume.land/plugins/reading_info/
 
 import daisyui from "daisyui";
 import tailwindcss_typography from "@tailwindcss/typography";
@@ -79,6 +81,7 @@ site.use(metas());
 site.use(minify_html());
 // site.use(robots());
 site.use(sitemap());
+site.use(readingInfo());
 site.use(slugify_urls());
 site.use(source_maps());
 site.use(
@@ -106,11 +109,16 @@ site.use(
 					typography: {
 						DEFAULT: {
 							css: {
-								color: "#333",
+								color: "oklch(var(--bc))",
 								a: {
-									color: "#3182ce",
+									fontWeight: 400,
+									textDecorationColor: "oklch(var(--p))",
+									textDecorationLine: "underline",
+									textUnderlineOffset: "4px",
 									"&:hover": {
-										color: "#2c5282",
+										color: "oklch(var(--p))",
+										textDecorationThickness: "2px",
+										transition: "all .2s ease-in-out",
 									},
 								},
 							},
@@ -124,8 +132,17 @@ site.use(
 );
 // site.use(pagefind());
 site.use(picture());
-site.use(transform_images()); // used by transform_images
+site.use(transformImages()); // used by transform_images
 site.use(postcss()); // Required for tailwindcss
 site.use(sass());
+site.preprocess([".md"], (pages) => {
+	for (const page of pages) {
+		page.data.excerpt ??= (page.data.content as string).split(
+			/<!--\s*more\s*-->/i,
+		)[0];
+	}
+});
 
 export default site;
+
+// TODO: email subscriptions https://www.beehiiv.com

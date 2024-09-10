@@ -1,71 +1,50 @@
 ---
 layout: layouts/About.tsx
 docTitle: About Justice P White
-title: About
+title: about
+image: headshot-regular
+imageAlt: Justice P White Headshot
 metas:
 ---
 
-# H1
+I’m Justice a front-end developer, reader, and writer with a wide range of interests, as you might have gathered from looking around this site.
 
-## H2here
+I've been freelancing for around 8 years, during which time I've worked on many different types of graphic design and web development projects. Check out the [projects page](/projects) for a select recent few that I'm particulary proud of, and take a look at my [web studio site](https://www.ds-design-studio.com) if you're interested in working together!
 
-### H3there
+The throughline of this site is a chronicle of many years of transformations and transitions, whether in my thinking about existence, history, religion, design, or the world wide web. What I've learned from using this site as a real-time, sometimes messy space to work out these ideas is that I am someone who wants to explore boundaries, who disdains rigid orthodoxies, and who is always seeking where to enact that modernist injunction to "make it new". Maybe you'll find something here that sparks a feeling of exploration and discovery.
 
-**bold text**
+## Site Details
 
-_italicized text_
+- Built with [Deno Lume](https://lume.land/), using [Vento](https://vento.js.org/) templates
+- Styled with vanilla CSS, optimized with [LightningCSS](https://lightningcss.dev/docs.html)
+- (Very minimal) client-side interactivity with vanilla JavaScript and web components
+- Code syntax highlighting with [Highlight.js](https://highlightjs.org/)
+- Client-server interaction with [HTMX](https://htmx.org/) and [Deno Oak](https://deno.land/x/oak@v12.6.2)
+- Privacy-focused analytics with [Fathom](https://usefathom.com/)
+- Content authored in Markdown
+- [Iconic](https://iconic.app/) icons
+- Static site search indexing with [Pagefind](https://pagefind.app/)
+- Deployed on [Deno Deploy](https://deno.com/deploy)
+- Average Lighthouse score: 💯 💯 💯 💯
 
-> blockquote
+### Colophon
 
-1. First
-2. Second
-3. Third item
+- Headings set in [Fjalla One](https://fonts.google.com/specimen/Fjalla+One)
+- Body set in [Brix Sans](https://www.hvdfonts.com/fonts/brix-sans)
+- Code set in [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 
-`inline code`
+## Uses
 
----
+- MacBook Pro 14" (M2)
+- Samsung UR55 Series 28" IPS 4K UHD Monitor
+- Audio-Technica ATH-M50x Headphones
+- Keychron V5 QMK Mechanical Keyboard • Mint Switches, Matcha Keycaps
+- Leuchtturm1917 Notebook Planner
 
-[title](https://www.google.com)
+### Software
 
-![alt text](image.jpg)
-
-| Syntax    | Description |
-| --------- | ----------- |
-| Header    | Title       |
-| Paragraph | Text        |
-
-```json
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-### My Great Heading {#custom-id}
-
-term
-: definition
-
-*[HTML]: Hyper Text Markup Language
-*[W3C]: World Wide Web Consortium
-The HTML specification
-is maintained by the W3C.
-
-~~The world is flat.~~
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-That is so funny! :joy:
-
-I need to highlight these ==very important words==.
-
-H~2~O
-
-X^2^
+- VSCode (Monokai Pro Theme) for programming
+- Figma and [Affinity](https://affinity.serif.com/en-us/) for design
+- [iA Writer](https://ia.net/writer) and [Obsidian](https://obsidian.md/) for writing/note-taking
+- YouTube Music for listening
+- Proton for email

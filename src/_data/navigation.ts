@@ -3,7 +3,7 @@ export type NavMain = { main: NavLink[] };
 
 export const main: NavLink[] = [
 	{ name: "about", path: "/about" },
-	{ name: "projects", path: "/projects" },
+	// { name: "projects", path: "/projects" },
 	{ name: "yoga", path: "/yoga" },
 	{ name: "blog", path: "/posts" },
 ];

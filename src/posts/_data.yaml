@@ -1,0 +1,5 @@
+layout: layouts/Post.tsx
+type: posts
+metas:
+  title: "=title"
+  description: "=summary"

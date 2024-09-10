@@ -1,0 +1,21 @@
+.header-anchor {
+  color: oklch(var(--bc));
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header-anchor:hover:after {
+  opacity: 0.7;
+}
+
+.header-anchor:after {
+  content: "#";
+  color: oklch(var(--p));
+  opacity: 0;
+  margin-left: 0.5rem;
+  transition: all 0.2s;
+}
+
+.prose li::marker {
+  color: oklch(var(--s));
+}
