@@ -1,14 +1,4 @@
-type Post = {
-	title: string;
-	tags: string[];
-	url: string;
-	date: string;
-	excerpt: string;
-	readingInfo: {
-		words: number;
-		minutes: number;
-	};
-};
+import type { Post } from "../_includes/types/index.ts";
 
 export default (
 	{ post, comp }: Lume.Data & { post: Post },

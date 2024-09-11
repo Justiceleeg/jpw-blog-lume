@@ -14,6 +14,23 @@
   background-color: rgba(var(--b1), 0.8);
 } */
 
+:root {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: oklch(var(--bc));
+  --pagefind-ui-text: inherit;
+  --pagefind-ui-background: var(
+    --fallback-b1,
+    oklch(var(--b1) / var(--tw-bg-opacity))
+  );
+  --pagefind-ui-border: var(--fallback-bc, oklch(var(--bc) / 0.2));
+  --pagefind-ui-tag: oklch(var(--bc));
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: GeistSans;
+}
+
 .spin-svg {
   animation: 0.4s linear spinnering;
 }

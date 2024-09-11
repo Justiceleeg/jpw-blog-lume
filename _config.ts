@@ -7,7 +7,7 @@ import lume from "lume/mod.ts";
 import mdx from "lume/plugins/mdx.ts";
 import metas from "lume/plugins/metas.ts";
 import minify_html from "lume/plugins/minify_html.ts";
-// import pagefind from "lume/plugins/pagefind.ts";
+import pagefind from "lume/plugins/pagefind.ts";
 import picture from "lume/plugins/picture.ts";
 import postcss from "lume/plugins/postcss.ts";
 import redirects from "lume/plugins/redirects.ts";
@@ -130,7 +130,7 @@ site.use(
 		},
 	}),
 );
-// site.use(pagefind());
+site.use(pagefind());
 site.use(picture());
 site.use(transformImages()); // used by transform_images
 site.use(postcss()); // Required for tailwindcss

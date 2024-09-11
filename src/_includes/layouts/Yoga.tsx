@@ -1,6 +1,6 @@
 export const layout = "layouts/Base.tsx";
 
-export default ({ children, title, imageAlt, image, comp }: Lume.Data) => (
+export default ({ children, title, imageAlt, image }: Lume.Data) => (
 	<div className="flex flex-col md:flex-row gap-8 max-w-screen-lg m-auto py-8 px-4 sm:px-4">
 		<div className="order-2 md:order-1 basis-3/5">
 			<h1 className="text-4xl mb-8 font-medium">{title}</h1>
