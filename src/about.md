@@ -7,44 +7,19 @@ imageAlt: Justice P White Headshot
 metas:
 ---
 
-I’m Justice a front-end developer, reader, and writer with a wide range of interests, as you might have gathered from looking around this site.
+I’m Justice a software engineer and yogi. I've created rich user-experiences on the front-end, built fullstack apps, and toyed with indie game development. When I'm not coding, I'm deepening my yoga practice. 
 
-I've been freelancing for around 8 years, during which time I've worked on many different types of graphic design and web development projects. Check out the [projects page](/projects) for a select recent few that I'm particulary proud of, and take a look at my [web studio site](https://www.ds-design-studio.com) if you're interested in working together!
+I've been a software engineer for around 7 years, specifically with 5 years of professional front-end experience. I've worked for companies of all sizes from startup to FAANG and industries like healthcare, construction, and ecommerce. If you're looking for a strong web dev take a look at my [LinkedIn](https://www.instagram.com/justicepwhite/) and connect with me!
 
-The throughline of this site is a chronicle of many years of transformations and transitions, whether in my thinking about existence, history, religion, design, or the world wide web. What I've learned from using this site as a real-time, sometimes messy space to work out these ideas is that I am someone who wants to explore boundaries, who disdains rigid orthodoxies, and who is always seeking where to enact that modernist injunction to "make it new". Maybe you'll find something here that sparks a feeling of exploration and discovery.
+I started my yoga journey over 10 years ago and in the summer of 2024 I had the priviledge of deepening my yoga practice with the 200 hour yoga teacher training led by [Black Swan Yoga](https://www.blackswanyoga.com). If you'd like to join me for a flow check out the [yoga page](/yoga) or follow me on my [Instagram](https://www.instagram.com/justicepwhite/)!
 
 ## Site Details
 
-- Built with [Deno Lume](https://lume.land/), using [Vento](https://vento.js.org/) templates
-- Styled with vanilla CSS, optimized with [LightningCSS](https://lightningcss.dev/docs.html)
-- (Very minimal) client-side interactivity with vanilla JavaScript and web components
+- Built with [Deno Lume](https://lume.land/), using [Preact](https://preactjs.com) templates
+- Styled with a mix of [TailwindCSS](https://tailwindcss.com), [daisyUI](https://daisyui.com) and vanilla CSS.
+- (Very minimal) client-side interactivity with vanilla JavaScript (written in Typescript)
 - Code syntax highlighting with [Highlight.js](https://highlightjs.org/)
-- Client-server interaction with [HTMX](https://htmx.org/) and [Deno Oak](https://deno.land/x/oak@v12.6.2)
-- Privacy-focused analytics with [Fathom](https://usefathom.com/)
 - Content authored in Markdown
-- [Iconic](https://iconic.app/) icons
 - Static site search indexing with [Pagefind](https://pagefind.app/)
 - Deployed on [Deno Deploy](https://deno.com/deploy)
 - Average Lighthouse score: 💯 💯 💯 💯
-
-### Colophon
-
-- Headings set in [Fjalla One](https://fonts.google.com/specimen/Fjalla+One)
-- Body set in [Brix Sans](https://www.hvdfonts.com/fonts/brix-sans)
-- Code set in [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-
-## Uses
-
-- MacBook Pro 14" (M2)
-- Samsung UR55 Series 28" IPS 4K UHD Monitor
-- Audio-Technica ATH-M50x Headphones
-- Keychron V5 QMK Mechanical Keyboard • Mint Switches, Matcha Keycaps
-- Leuchtturm1917 Notebook Planner
-
-### Software
-
-- VSCode (Monokai Pro Theme) for programming
-- Figma and [Affinity](https://affinity.serif.com/en-us/) for design
-- [iA Writer](https://ia.net/writer) and [Obsidian](https://obsidian.md/) for writing/note-taking
-- YouTube Music for listening
-- Proton for email

@@ -7,7 +7,7 @@ export default (
 	helpers: Lume.Helpers,
 ) => (
 	<div data-pagefind-body className="max-w-screen-md m-auto py-8 px-4 sm:px-4">
-		<div className="flex flex-col gap-8">
+		<div className="flex flex-col">
 			<div className="flex flex-col gap-2">
 				<h1 className="text-4xl font-medium">{title}</h1>
 				<div className="flex flex-row gap-2 items-center text-xs opacity-80">
@@ -22,7 +22,7 @@ export default (
 					</p>
 				</div>
 			</div>
-			{children}
+			<div className="prose">{children}</div>
 		</div>
 	</div>
 );
