@@ -2,7 +2,6 @@
   "imports": {
     "@tailwindcss/typography": "npm:@tailwindcss/typography@^0.5.15",
     "daisyui": "npm:daisyui@^4.12.10",
-    "hono": "jsr:@hono/hono@^4.5.5",
     "lume/": "https://deno.land/x/lume@v2.2.4/",
     "tailwindcss": "npm:tailwindcss@^3.4.10"
   },
