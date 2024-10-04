@@ -3,7 +3,6 @@
   "packages": {
     "specifiers": {
       "jsr:@davidbonnet/astring@1.8.6": "jsr:@davidbonnet/astring@1.8.6",
-      "jsr:@hono/hono@^4.5.5": "jsr:@hono/hono@4.5.5",
       "jsr:@libs/typing@2": "jsr:@libs/typing@2.8.1",
       "jsr:@std/cli@0.224.7": "jsr:@std/cli@0.224.7",
       "jsr:@std/cli@^0.224.7": "jsr:@std/cli@0.224.7",
@@ -43,6 +42,7 @@
       "npm:@types/react@18.3.3": "npm:@types/react@18.3.3",
       "npm:autoprefixer@10.4.19": "npm:autoprefixer@10.4.19_postcss@8.4.39",
       "npm:daisyui@^4.12.10": "npm:daisyui@4.12.10_postcss@8.4.39",
+      "npm:date-fns": "npm:date-fns@3.6.0",
       "npm:date-fns@3.6.0": "npm:date-fns@3.6.0",
       "npm:estree-walker@3.0.3": "npm:estree-walker@3.0.3",
       "npm:geist@^1.3.1": "npm:geist@1.3.1_next@14.2.7__react@18.3.1__react-dom@18.3.1___react@18.3.1__sass@1.77.8_react@18.3.1_react-dom@18.3.1__react@18.3.1_sass@1.77.8",
@@ -87,9 +87,6 @@
     "jsr": {
       "@davidbonnet/astring@1.8.6": {
         "integrity": "98b4914c8863cdf8c0ff83bb5c528caa67a8dca6020ad6234113499f00583e3a"
-      },
-      "@hono/hono@4.5.5": {
-        "integrity": "e5a63b5f535475cd80974b65fed23a138d0cbb91fe1cc9a17a7c7278e835c308"
       },
       "@libs/typing@2.8.1": {
         "integrity": "08437a01ec51f74a20a5ab5d683475025f93a2ad641d2394a97e87f7b5194d78"
@@ -2870,7 +2867,6 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@hono/hono@^4.5.5",
       "npm:@tailwindcss/typography@^0.5.15",
       "npm:daisyui@^4.12.10",
       "npm:tailwindcss@^3.4.10"

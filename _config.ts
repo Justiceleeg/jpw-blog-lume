@@ -42,6 +42,8 @@ import abbr from "npm:markdown-it-abbr";
 import { full as emoji } from "npm:markdown-it-emoji";
 //? https://github.com/markdown-it/markdown-it
 
+import { enUS } from "npm:date-fns/locale/en-US";
+
 const markdown = {
 	plugins: [sub, sup, emoji, mark, abbr],
 };
@@ -74,7 +76,9 @@ site.use(
 		},
 	}),
 );
-site.use(date());
+site.use(date({
+  locales: { enUS },
+}));
 // site.use(feed());
 site.use(mdx());
 site.use(metas());
